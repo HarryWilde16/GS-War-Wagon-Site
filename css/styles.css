@@ -662,6 +662,10 @@ body {
     color: var(--accent);
 }
 
+.blog-content .btn {
+    color: var(--white);
+}
+
 /* Footer */
 .footer {
     background: var(--primary);
