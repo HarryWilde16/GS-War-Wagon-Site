@@ -1,0 +1,26 @@
+/* Base styles for GS War Wagon site (copied and trimmed from Duckwood scaffold) */
+:root{
+    --brand-wood: #111111; /* will update after logo colour extraction */
+    --brand-cream: #f6efdd;
+    --accent: #000000;
+    --muted: #6c6c6c;
+    --radius: 8px;
+    --shadow-1: 0 10px 30px rgba(33,33,33,.08);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family: 'Montserrat', sans-serif;font-size:16px;color:#222;background-color:#fff}
+.navbar{box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.bg-theme{background-color:var(--brand-cream) !important}
+.logo{height:52px}
+.hero{min-height:320px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:3.5rem 1rem;background-size:cover;background-position:center;position:relative}
+.hero .hero-inner{position:relative;z-index:2;max-width:1100px;background: rgba(246,239,221,0.35);color: #fff;padding: 1.1rem 1.6rem;border-radius: 10px}
+.card{border:none;border-radius:var(--radius);box-shadow:var(--shadow-1)}
+.process-section{background:#fafafa;padding:2.5rem;border-radius:8px}
+.btn-primary{background:var(--accent);border:none}
+footer{border-top:1px solid #eee;padding:1.25rem 0;background:#fff}
+.container{max-width:1100px}
+.site-section{padding:3rem 1rem}
+.section-title{text-align:center;margin-bottom:1.5rem}
+.skip-link{position:absolute;left:-9999px}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;padding:.5rem .75rem;background:#000;color:#fff;z-index:10000;border-radius:4px}
