@@ -164,6 +164,16 @@ body {
     color: var(--accent);
 }
 
+.contact-link.phone {
+    color: #0066cc;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.contact-link.phone:hover {
+    color: #0052a3;
+}
+
 .contact-link .label {
     font-weight: 600;
     color: var(--text-dark);
@@ -568,15 +578,15 @@ body {
 
 .info-block a {
     display: block;
-    color: var(--accent);
-    text-decoration: none;
+    color: #0066cc;
+    text-decoration: underline;
     font-weight: 600;
     margin-bottom: var(--spacing-lg);
     font-size: 1.05rem;
 }
 
 .info-block a:hover {
-    text-decoration: underline;
+    color: #0052a3;
 }
 
 .info-block p {
@@ -690,8 +700,18 @@ body {
     transition: var(--transition);
 }
 
+.footer-section a[href^="tel:"] {
+    color: #5fa3ff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 .footer-section a:hover {
     color: var(--accent);
+}
+
+.footer-section a[href^="tel:"]:hover {
+    color: #7eb3ff;
 }
 
 .footer-bottom {
