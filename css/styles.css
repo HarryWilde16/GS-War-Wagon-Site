@@ -662,8 +662,8 @@ body {
     color: var(--accent);
 }
 
-.blog-content .btn {
-    color: var(--white);
+.blog-content a.btn-primary {
+    color: var(--white) !important;
 }
 
 /* Footer */
