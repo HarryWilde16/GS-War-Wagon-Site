@@ -5,55 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="GS War Wagon Services — garbage removal, labour hire, snow management, demolition and removals.">
     <title>Services | GS War Wagon</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to main content</a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-theme" role="navigation">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/branding/GS War Wagon Centre long.png" alt="GS War Wagon Logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="assets/branding/GS War Wagon Centre long.png" alt="GS War Wagon Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-contact-desktop">
+                    <a href="tel:+16043884636" class="contact-link phone">
+                        <span class="label">Call:</span> (604) 388-4636
+                    </a>
+                    <a href="mailto:info@gswarwagon.example" class="contact-link email">
+                        <span class="label">Email:</span> info@gswarwagon.example
+                    </a>
+                </div>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
+                <div class="nav-contact-mobile">
+                    <a href="tel:+16043884636" class="contact-link phone">
+                        <span class="label">Call:</span> (604) 388-4636
+                    </a>
+                    <a href="mailto:info@gswarwagon.example" class="contact-link email">
+                        <span class="label">Email:</span> info@gswarwagon.example
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header class="hero" style="background-image: url('assets/images/hero-placeholder.jpg')">
-        <div class="hero-inner">
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
             <h1>Our Services</h1>
-            <p>Comprehensive site services across the Sea to Sky corridor.</p>
+            <p>Comprehensive site services across the Sea to Sky corridor</p>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main id="main" tabindex="-1">
-    <section class="container my-5" aria-labelledby="services-heading">
-        <h2 id="services-heading" class="text-center mb-4">Services</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5>Garbage Removal</h5><p>Bin and bulk removal services with compliant disposal.</p></div></div></div>
-            <div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5>Labour Hire</h5><p>Skilled labour for demolition, site prep, and general work.</p></div></div></div>
-            <div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5>Snow Management</h5><p>Seasonal clearing, plowing and de-icing services.</p></div></div></div>
-            <div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5>Demolition & Removals</h5><p>Safe demolition and responsible material removal.</p></div></div></div>
-        </div>
-    </section>
+        <section class="services-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What We Offer</h2>
+                    <p>Professional services tailored to your needs, backed by 30 years of experience and expertise.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🗑️</div>
+                        <h3>Garbage Removal</h3>
+                        <p>Fast, compliant waste disposal and bin service for residential and commercial properties. Complete with licensed disposal partners and responsible recycling practices.</p>
+                        <a href="contact.html" class="service-link">Request Service →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">👷</div>
+                        <h3>Labour Hire</h3>
+                        <p>Skilled, insured crews for one-off projects and ongoing maintenance work. From demolition to site prep, we have the expertise for your needs.</p>
+                        <a href="contact.html" class="service-link">Request Service →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">❄️</div>
+                        <h3>Snow Management</h3>
+                        <p>Seasonal snow clearing and de-icing services to keep properties safe year-round. Available 24/7 throughout the winter season.</p>
+                        <a href="contact.html" class="service-link">Request Service →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏗️</div>
+                        <h3>Demolition</h3>
+                        <p>Professional demolition and removal services with full environmental compliance. Safe, efficient, and responsible waste management.</p>
+                        <a href="contact.html" class="service-link">Request Service →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💦</div>
+                        <h3>Power Washing</h3>
+                        <p>Professional pressure washing for residential and commercial properties. Keep your property looking fresh and well-maintained.</p>
+                        <a href="contact.html" class="service-link">Request Service →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌱</div>
+                        <h3>Yard Cleanup</h3>
+                        <p>Complete yard maintenance and cleanup services to keep your property pristine. From seasonal cleanup to ongoing maintenance.</p>
+                        <a href="contact.html" class="service-link">Request Service →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Guarantees -->
+        <section class="why-choose">
+            <div class="container">
+                <h2>Our Service Guarantee</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-number">✓</div>
+                        <h4>Fully Insured</h4>
+                        <p>Complete coverage and professional liability protection on all services.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-number">✓</div>
+                        <h4>Licensed Crews</h4>
+                        <p>All personnel fully trained, vetted, and licensed for their roles.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-number">✓</div>
+                        <h4>Fair Pricing</h4>
+                        <p>Transparent estimates with no hidden charges or surprises.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-number">✓</div>
+                        <h4>24/7 Available</h4>
+                        <p>Emergency service when you need it, around the clock.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Get Started?</h2>
+                <p>Contact us today for a free quote and discover why we're the trusted choice for waste management and labor services.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Request a Quote</a>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-white text-center py-3">
-        <p>&copy; <span id="year"></span> GS War Wagon Garbage & Refuse LTD. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GS War Wagon</h4>
+                    <p>Professional waste management and labor solutions for the Sea to Sky.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>
+                        <a href="tel:+16043884636">(604) 388-4636</a><br>
+                        <a href="mailto:info@gswarwagon.example">info@gswarwagon.example</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> GS War Wagon Garbage & Refuse LTD. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>

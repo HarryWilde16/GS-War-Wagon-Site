@@ -5,54 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About GS War Wagon — experienced refuse, labour hire and demolition services in the Sea to Sky.">
     <title>About | GS War Wagon</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to main content</a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-theme" role="navigation">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/branding/GS War Wagon Centre long.png" alt="GS War Wagon Logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="assets/branding/GS War Wagon Centre long.png" alt="GS War Wagon Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-contact-desktop">
+                    <a href="tel:+16043884636" class="contact-link phone">
+                        <span class="label">Call:</span> (604) 388-4636
+                    </a>
+                    <a href="mailto:info@gswarwagon.example" class="contact-link email">
+                        <span class="label">Email:</span> info@gswarwagon.example
+                    </a>
+                </div>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
+                <div class="nav-contact-mobile">
+                    <a href="tel:+16043884636" class="contact-link phone">
+                        <span class="label">Call:</span> (604) 388-4636
+                    </a>
+                    <a href="mailto:info@gswarwagon.example" class="contact-link email">
+                        <span class="label">Email:</span> info@gswarwagon.example
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header class="hero" style="background-image: url('assets/images/hero-placeholder.jpg')">
-        <div class="hero-inner">
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
             <h1>About GS War Wagon</h1>
-            <p>Reliable, safe, and experienced crews for Sea to Sky projects.</p>
+            <p>Trusted by the Sea to Sky community for 30 years of reliable service</p>
         </div>
     </header>
 
-    <main id="main" class="container site-section" tabindex="-1">
-        <h2 class="section-title">About Us</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-9">
-                <p>GS War Wagon has provided dependable garbage removal, labour hire, snow management and demolition services across the Sea to Sky corridor for three decades.</p>
-                <p>We operate with safety-first procedures, licensed disposal partners, and crews trained to handle residential, commercial and construction site needs.</p>
-                <p class="mt-4"><a href="contact.html" class="btn btn-primary">Request a Quote</a></p>
+    <!-- Main Content -->
+    <main id="main" tabindex="-1">
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Our Story</h2>
+                    <p>GS War Wagon has provided dependable garbage removal, labour hire, snow management and demolition services across the Sea to Sky corridor for three decades. Our commitment to reliability, safety, and customer service has made us a trusted partner for residential, commercial, and construction clients throughout the region.</p>
+                    
+                    <h3>Our Values</h3>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h4>Safety First</h4>
+                            <p>We operate with industry-leading safety procedures and fully trained, licensed crews.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Reliability</h4>
+                            <p>Dependable service you can count on, every single time, year-round.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Professionalism</h4>
+                            <p>Modern equipment, vetted crews, and full insurance coverage on all services.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Responsibility</h4>
+                            <p>Compliant disposal practices and environmental stewardship in everything we do.</p>
+                        </div>
+                    </div>
+
+                    <h3>Why Choose Us?</h3>
+                    <ul class="features-list">
+                        <li>30+ years of experience serving the Sea to Sky</li>
+                        <li>Fully insured and licensed crews</li>
+                        <li>24/7 emergency service availability</li>
+                        <li>Modern equipment and vehicles</li>
+                        <li>Competitive pricing and transparent estimates</li>
+                        <li>Responsive customer service</li>
+                    </ul>
+
+                    <div class="cta-box">
+                        <h3>Ready to work with us?</h3>
+                        <p>Contact GS War Wagon today for a free quote on your project.</p>
+                        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="bg-white text-center py-3">
-        <p>&copy; <span id="year"></span> GS War Wagon Garbage & Refuse LTD. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GS War Wagon</h4>
+                    <p>Professional waste management and labor solutions for the Sea to Sky.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>
+                        <a href="tel:+16043884636">(604) 388-4636</a><br>
+                        <a href="mailto:info@gswarwagon.example">info@gswarwagon.example</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> GS War Wagon Garbage & Refuse LTD. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
