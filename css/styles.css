@@ -243,8 +243,8 @@ body {
 }
 
 .logo-circle {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background: var(--white);
     border-radius: 50%;
     display: flex;
