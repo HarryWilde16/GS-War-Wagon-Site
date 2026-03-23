@@ -99,6 +99,10 @@ body {
     display: none;
 }
 
+.nav-brand-mobile {
+    display: none;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -744,6 +748,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-container {
+        gap: var(--spacing-lg);
+    }
+
     .nav-toggle {
         display: flex;
     }
@@ -756,6 +764,19 @@ body {
         display: flex;
         flex-direction: column;
         gap: var(--spacing-lg);
+    }
+
+    .nav-brand-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        font-family: 'Fredoka One', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--text-dark);
+        line-height: 1.2;
     }
 
     .nav-menu {
@@ -778,6 +799,7 @@ body {
     .nav-left {
         flex-direction: column;
         gap: var(--spacing-lg);
+        flex: 0 0 auto;
     }
 
     .nav-links {
