@@ -771,12 +771,12 @@ body {
         align-items: center;
         justify-content: center;
         flex: 1;
-        font-family: 'Fredoka One', sans-serif;
-        font-size: 1.1rem;
-        font-weight: 700;
-        text-align: center;
-        color: var(--text-dark);
-        line-height: 1.2;
+    }
+
+    .nav-brand-mobile img {
+        height: 50px;
+        width: auto;
+        object-fit: contain;
     }
 
     .nav-menu {
