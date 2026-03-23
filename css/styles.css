@@ -771,11 +771,13 @@ body {
         align-items: center;
         justify-content: center;
         flex: 1;
+        min-width: 0;
     }
 
     .nav-brand-mobile img {
-        height: 50px;
+        height: 60px;
         width: auto;
+        max-width: 100%;
         object-fit: contain;
     }
 
@@ -800,6 +802,15 @@ body {
         flex-direction: column;
         gap: var(--spacing-lg);
         flex: 0 0 auto;
+        order: 1;
+    }
+
+    .nav-brand-mobile {
+        order: 2;
+    }
+
+    .nav-toggle {
+        order: 3;
     }
 
     .nav-links {
