@@ -245,16 +245,15 @@ body {
 .logo-circle {
     width: 400px;
     height: 400px;
-    background: var(--white);
+    background: transparent;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
 .hero-logo {
-    width: 280px;
+    width: 380px;
     height: auto;
     object-fit: contain;
 }
