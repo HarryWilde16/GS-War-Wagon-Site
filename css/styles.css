@@ -8,7 +8,8 @@
     --text-light: #666666;
     --text-muted: #999999;
     --border: #e5e5e5;
-    --white: #ffffff;
+    --white: #e3dcc0;
+    --light-text: #ffffff;
     --spacing: 1rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
@@ -184,7 +185,7 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary) 0%, #2d2d2d 100%);
-    color: var(--white);
+    color: var(--light-text);
     padding: var(--spacing-xl) var(--spacing-lg);
     min-height: 500px;
     display: flex;
@@ -274,7 +275,7 @@ body {
 
 .btn-primary {
     background: var(--accent);
-    color: var(--white);
+    color: var(--light-text);
     border-color: var(--accent);
 }
 
@@ -287,12 +288,12 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: var(--white);
-    border-color: var(--white);
+    color: var(--light-text);
+    border-color: var(--light-text);
 }
 
 .btn-secondary:hover {
-    background: var(--white);
+    background: var(--light-text);
     color: var(--primary);
 }
 
@@ -423,7 +424,7 @@ body {
 /* Page Header */
 .page-header {
     background: linear-gradient(135deg, var(--primary) 0%, #2d2d2d 100%);
-    color: var(--white);
+    color: var(--light-text);
     padding: var(--spacing-xl) var(--spacing-lg);
     text-align: center;
 }
@@ -443,7 +444,7 @@ body {
 .cta-section {
     padding: var(--spacing-xl) var(--spacing-lg);
     background: linear-gradient(135deg, var(--primary) 0%, #2d2d2d 100%);
-    color: var(--white);
+    color: var(--light-text);
     text-align: center;
 }
 
@@ -662,7 +663,7 @@ body {
 }
 
 .blog-content a.btn-primary {
-    color: var(--white) !important;
+    color: var(--light-text) !important;
 }
 
 /* Footer */
@@ -737,7 +738,7 @@ body {
     top: 1rem;
     padding: 0.5rem 0.75rem;
     background: var(--accent);
-    color: var(--white);
+    color: var(--light-text);
     border-radius: var(--radius);
     text-decoration: none;
 }
