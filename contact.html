@@ -92,7 +92,10 @@
                     
                     <div class="contact-form-wrapper">
                         <h2>Send us a Message</h2>
-                        <form id="contact-form" action="mailto:info@whatsonwhistler.com" method="POST" enctype="text/plain" novalidate>
+                        <form id="contact-form" action="https://formspree.io/f/xwvwvgwl" method="POST" novalidate>
+                            <input type="text" name="_gotcha" style="display:none" aria-hidden="true">
+                            <input type="hidden" name="_subject" value="New contact from G's War Wagon website">
+                            <input type="hidden" name="_next" value="thank-you.html">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="name" autocomplete="name" required>
@@ -122,7 +125,10 @@
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" autocomplete="off" rows="6" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                                <div id="formStatus" style="font-size: 14px;" aria-live="polite"></div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -165,14 +171,49 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
         (function(){
-            var form = document.getElementById('contact-form');
+            const form = document.getElementById('contact-form');
             if(!form) return;
+            const statusEl = document.getElementById('formStatus');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            function setStatus(msg, cls){
+                if(statusEl){ 
+                    statusEl.textContent = msg; 
+                    statusEl.className = (cls||''); 
+                }
+            }
+            
             form.addEventListener('submit', function(e){
-                e.preventDefault();
-                alert('Thank you! We will get back to you within 2 business hours.');
-                form.reset();
+                let valid = true;
+                form.querySelectorAll('[required]').forEach(function(field){
+                    if(!field.checkValidity()){
+                        field.style.borderColor = '#e74c3c';
+                        valid = false;
+                    } else {
+                        field.style.borderColor = '';
+                    }
+                });
+                
+                if(!valid){
+                    setStatus('Please fill out all required fields.', 'color: #e74c3c;');
+                    e.preventDefault();
+                    return;
+                }
+                
+                submitBtn.disabled = true;
+                submitBtn.setAttribute('aria-busy','true');
+                setStatus('Submitting…', 'color: #666;');
+            });
+            
+            form.querySelectorAll('[required]').forEach(function(field){
+                field.addEventListener('input', function(){
+                    if(field.checkValidity()) {
+                        field.style.borderColor = '';
+                    }
+                });
             });
         })();
     </script>
+
 </body>
 </html>
