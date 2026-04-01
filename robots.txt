@@ -1,0 +1,11 @@
+# G's War Wagon Robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Point search engines to the sitemap
+Sitemap: https://gswarwagon.ca/sitemap.xml
+
+# Crawl-delay (optional - allows 1 request per second)
+Crawl-delay: 1
