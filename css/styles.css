@@ -185,6 +185,12 @@ body {
     font-size: 0.8rem;
 }
 
+.contact-link.instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary) 0%, #2d2d2d 100%);
